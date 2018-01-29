@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+    <title></title>
+</head>
+<body>
+
+    <h3 style="text-align:center; margin-top: 30px; margin-bottom:30px;">MFLF Test past3.2</h3>
+
+    <div class="container" style=" margin-bottom:100px; width:500px; text-align:center;">
+        <p>input1 : 1, 4, 2, 6</p>
+        <p>input2 : 7, 4, 1, 9</p>
+        <h5 style="text-align:center;">______________________________________________</h5>
+        <h5 style="text-align:center;">Result</h5>
+      
+      
+        <div id="result" style="text-align:center;" onclick="myFunction()" ></div>
+    </div>
+
+
+    <script>
+        var num1 = [1, 4, 2, 6];
+        var num2 = [7, 4, 1, 9];
+        var number = num1 + num2;
+        function myFunction(num) {
+
+            var i,
+                len = num.length,
+                result = [],
+                j = {};
+            for (i = 0; i < len; i++) {
+                j[num[i]] = 0;
+            }
+            for (i in j) {
+                result.push(i);
+            }
+            return result;
+        }
+
+        document.getElementById("result").innerHTML = myFunction(number);
+        
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+
+    <title></title>
+</head>
+<body>
+
+    <h3 style="text-align:center; margin-top: 30px; margin-bottom:30px;">MFLF Test past3.2</h3>
+
+    <div class="container" style=" margin-bottom:100px; width:500px;">
+        <h5 style="text-align:center;">______________________________________________</h5>
+        <h5 style="text-align:center;">Result</h5>
+        <div id="result" style="text-align:center;"></div>
+    </div>
+ 
+
+    <script>
+        var a = Math.round(12.02).toFixed(2);
+        //var a = Math.round(12.02e+2);
+       // var b = Math.round(10.45);
+        var b = 10.45+0.05
+        var c = 11.80-0.05;
+        var d = Math.round(9.89).toFixed(2);
+
+        Math.floor(b);
+        Math.round(c)
+        var x = "12.02 = " + a + "<br>" + "10.45 = " + b +0+ "<br>" + "11.80 = " + c + "<br>" + "9.89 = " + d ;
+    document.getElementById("result").innerHTML = x;
+   
+    </script>
+
+</body>
+</html>
